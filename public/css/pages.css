@@ -4,7 +4,7 @@
   width: 8em;
   height: 1.5em;
   margin: 1em auto;
-  background-color: #fe6f48;
+  background-color: #db0029;
   font-size: 2em;
   text-align: center;
   line-height: 1.5em;
@@ -20,7 +20,7 @@
   top: 0;
   width: 0;
   height: 100%;
-  border: 0.75em solid #fe6f48;
+  border: 0.75em solid #db0029;
 }
 .banner::before {
   right: 100%;
@@ -41,7 +41,7 @@
 }
 .progress,
 .continue.default {
-  background-color: #fe6f48;
+  background-color: #db0029;
   -webkit-border-radius: 99em;
   -moz-border-radius: 99em;
   -ms-border-radius: 99em;
@@ -274,7 +274,7 @@
   height: 22em;
   top: 1em;
   right: 55%;
-  border: 3px dashed #407fa2;
+  border: 3px dashed #f5f5f5;
   -webkit-border-radius: 99em;
   -moz-border-radius: 99em;
   -ms-border-radius: 99em;
@@ -282,7 +282,7 @@
   border-radius: 99em;
 }
 .question-1 .product .caption.indicator {
-  border-color: #fe6f48;
+  border-color: #db0029;
 }
 .question-1 .product .caption .text {
   display: block;
@@ -692,7 +692,7 @@
   left: 50%;
   width: 5em;
   height: 7.5em;
-  background: #fff;
+  background: #f5f5f5;
   -webkit-border-radius: 0.33em;
   -moz-border-radius: 0.33em;
   -ms-border-radius: 0.33em;
@@ -804,7 +804,7 @@
   left: -3.25em;
   width: 6.5em;
   height: 9em;
-  border: 3px dashed #fff;
+  border: 3px dashed #f5f5f5;
   -webkit-border-radius: 0.67em;
   -moz-border-radius: 0.67em;
   -ms-border-radius: 0.67em;
@@ -836,7 +836,7 @@
   background-image: url(../img/q4.thumbsdown.svg);
 }
 .question-4 .answer.indicator {
-  border-color: #fe6f48;
+  border-color: #db0029;
 }
 .question-4 .answer span {
   display: table-cell;
@@ -849,7 +849,7 @@
   right: 50%;
   bottom: 20%;
   margin-right: -2.5em;
-  background-color: #fe6f48;
+  background-color: #db0029;
   -webkit-border-radius: 0.33em;
   -moz-border-radius: 0.33em;
   -ms-border-radius: 0.33em;
@@ -894,7 +894,7 @@
 .question-5 .q5-svg.speech-bubble .frame {
   margin: 0 auto;
   position: absolute;
-  background: #407fa2;
+  background: #f5f5f5;
   border: solid 3px #ffffff;
   padding: 1.6em 3em;
   line-height: 1.25;
@@ -930,10 +930,10 @@
   opacity: 0;
 }
 .question-5 .q5-svg.thumbs-up svg .red-fill {
-  fill: #fe6f48;
+  fill: #db0029;
 }
 .question-5 .q5-svg.thumbs-up svg .red-stroke {
-  stroke: #fe6f48;
+  stroke: #db0029;
 }
 .question-5 .q5-svg.thumbs-up svg .white-srtoke {
   stroke: #ffffff;
@@ -1058,8 +1058,9 @@
 .question-6 .true-false .true {
   width: 50%;
   float: left;
+  color: #999999;
   font-size: 4em;
-  text-shadow: 4px 4px 0px #fe6f48;
+  text-shadow: 4px 4px 0px #666666;
   position: relative;
   transition: text-shadow 0.2s;
   transition: color 0.2s;
@@ -1068,8 +1069,8 @@
 }
 .question-6 .true-false .false.highlight,
 .question-6 .true-false .true.highlight {
-  text-shadow: 4px 4px 0px #ffffff;
-  color: #fe6f48;
+  text-shadow: 4px 4px 0px #000000;
+  color: #db0029;
 }
 .question-6 .true-false .false .text,
 .question-6 .true-false .true .text {
@@ -1131,7 +1132,7 @@
   width: 1.5em;
   line-height: 1.5em;
   margin: -1em 0 0 0.5em;
-  background-color: #407fa2;
+  background-color: #999999;
   -webkit-border-radius: 99em;
   -moz-border-radius: 99em;
   -ms-border-radius: 99em;
@@ -1241,13 +1242,16 @@
 .question-8 .option {
   position: absolute;
   font-size: 1.67em;
-  text-shadow: 2px 2px 0 #407fa2;
+  color: #999999;
+  text-shadow: 2px 2px 0 #666666;
 }
 .question-8 .option:hover {
-  color: #fe6f48;
+  color: #db0029;
+  text-shadow: 2px 2px 0 #000000;
 }
 .question-8 .option.active {
-  color: #fe6f48;
+  color: #db0029;
+  text-shadow: 2px 2px 0 #000000;
 }
 .question-8 .option::before {
   content: '#';
@@ -1302,7 +1306,7 @@
   left: 0;
   width: 50%;
   bottom: 0;
-  background-color: #fe6f48;
+  background-color: #db0029;
 }
 .result .tagline {
   margin: 0.33em 0;
@@ -1334,7 +1338,7 @@
   min-height: 19em;
   margin-right: 30.901699999999998%;
   padding-right: 1em;
-  border-right: 2px solid #407fa2;
+  border-right: 2px solid #999999;
 }
 .result .column + .column {
   position: absolute;
@@ -1348,7 +1352,7 @@
 }
 .result .action a {
   display: inline-block;
-  background-color: #fe6f48;
+  background-color: #db0029;
   padding-left: 0.33em;
   padding-right: 0.33em;
   color: #fff;
@@ -1360,7 +1364,7 @@
 .result .actions,
 .result .comparison,
 .result .sharing {
-  border-top: 2px solid #407fa2;
+  border-top: 2px solid #999999;
 }
 .result .comparison p {
   position: relative;
@@ -1407,7 +1411,7 @@
 }
 .static a {
   display: inline-block;
-  background-color: #fe6f48;
+  background-color: #db0029;
   padding-left: 0.33em;
   padding-right: 0.33em;
   color: #fff;
@@ -1482,8 +1486,13 @@
   background-image: url(../img/persona.beancounter.svg);
 }
 .fix-MNY-123 {
-  color: #fe6f48 !important;
+  color: #db0029 !important;
 }
 .fix-MNY-123 span {
   color: #fff;
+}
+.welcome .caption,
+.get-ready .caption,
+.calculation .caption {
+  color: #999;
 }

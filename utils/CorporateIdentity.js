@@ -1,9 +1,9 @@
 var live = {},
     edit = {},
     factory = {
-        bodyColor: '#287d9a',
-        headerColor: '#24505d',
-        headerTextColor: '#498d8d',
+        bodyColor: '#ffffff',
+        headerColor: '#f5f5f5',
+        headerTextColor: '#666666',
         logo: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGIAAAA4AQMAAAA8fr/cAAAABlBMVEUAAABJjY3HCBYbAAAAAXRSTlMAQObYZgAAACVJREFUKM9jYEAB7jKFx2GogYF44IDEbsDLGzVz1MyBNhNPKgcASWQdYTt7/AkAAAAASUVORK5CYII='
     },
     chain = function (req) {

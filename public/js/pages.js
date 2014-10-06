@@ -148,12 +148,12 @@ $(document).ready(function () {
 
         function stampMouseover() {
             var id = '#' + d3.select(this).attr('id');
-            d3.select(id + ' .bg').style('fill', '#fe6f48');
+            d3.select(id + ' .bg').style('fill', '#db0029');
         }
 
         function stampMouseout() {
-            d3.select('#yes .bg').style('fill', '#407fa2');
-            d3.select('#no .bg').style('fill', '#407fa2');
+            d3.select('#yes .bg').style('fill', '#999999');
+            d3.select('#no .bg').style('fill', '#999999');
         }
 
         function stamp(isOk) {
@@ -547,7 +547,7 @@ $(document).ready(function () {
                         thumbsupIsActive = !thumbsupIsActive;
 
                         if (thumbsupIsActive) {
-                            d3.selectAll('.turns-red').transition().duration(200).style('fill', '#fe6f48');
+                            d3.selectAll('.turns-red').transition().duration(200).style('fill', '#db0029');
                             $('.continue').removeClass('hidden');
 
                             // set the form data
@@ -991,16 +991,16 @@ $(document).ready(function () {
                 d3.select(this).classed('crumpled-2', spriteIndex > 1);
 
                 if (isOverTrash(centroidFocus) && trashIndex < 4) {
-                    d3.selectAll('.trash svg .change-color').style('fill', '#fe6f48');
+                    d3.selectAll('.trash svg .change-color').style('fill', '#db0029');
                     overDropTarget = true;
 
                 } else if (trashIndex >= 4) {
-                    d3.selectAll('.trash svg .change-color').style('fill', '#407fa2');
+                    d3.selectAll('.trash svg .change-color').style('fill', '#999999');
                     overDropTarget = false;
                     layoutFrames();
 
                 } else {
-                    d3.selectAll('.trash svg .change-color').style('fill', '#407fa2');
+                    d3.selectAll('.trash svg .change-color').style('fill', '#999999');
                     overDropTarget = false;
                 }
 
@@ -1009,7 +1009,7 @@ $(document).ready(function () {
 
         drag.on('dragend', function () {
 
-            d3.selectAll('.trash svg .change-color').style('fill', '#407fa2');
+            d3.selectAll('.trash svg .change-color').style('fill', '#999999');
 
             if (overDropTarget) {
 
@@ -1694,7 +1694,7 @@ $(document).ready(function () {
             arcs.append('svg:path').attr('transform',function (d, i) {
                 return i === 0 ? 'rotate(90) scale(1.15, 1.15)' : 'rotate(90)';
             }).attr('fill',function (d, i) {
-                return i === 0 ? '#fe6f48' : '#407fa2';
+                return i === 0 ? '#db0029' : '#999999';
             }).attr('d', arc);
         });
 

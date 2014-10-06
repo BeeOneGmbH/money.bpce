@@ -6,7 +6,7 @@
   width: 8em;
   height: 1.5em;
   margin: 1em auto;
-  background-color: #fe6f48;
+  background-color: #db0029;
   font-size: 2em;
   text-align: center;
   line-height: 1.5em;
@@ -20,7 +20,7 @@
   top: 0;
   width: 0;
   height: 100%;
-  border: 0.75em solid #fe6f48;
+  border: 0.75em solid #db0029;
 }
 
 .banner::before {
@@ -45,7 +45,7 @@
 
 .progress,
 .continue.default {
-  background-color: #fe6f48;
+  background-color: #db0029;
   .rounded-corners;
 }
 
@@ -290,11 +290,11 @@
     height: 22em;
     top: 1em;
     right: 55%;
-    border: 3px dashed #407fa2;
+    border: 3px dashed #f5f5f5;
     .rounded-corners;
 
     &.indicator {
-      border-color: #fe6f48;
+      border-color: #db0029;
     }
 
     .text {
@@ -607,7 +607,7 @@
     left: 50%;
     width: 5em;
     height: 7.5em;
-    background: #fff;
+    background: #f5f5f5;
     .rounded-corners (0.33em);
     .drop-shadow;
     text-align: center;
@@ -651,7 +651,7 @@
     left: -3.25em;
     width: 6.5em;
     height: 9em;
-    border: 3px dashed #fff;
+    border: 3px dashed #f5f5f5;
     .rounded-corners (0.67em);
 
     &::after {
@@ -686,7 +686,7 @@
     }
 
     &.indicator {
-      border-color: #fe6f48;
+      border-color: #db0029;
     }
 
     span {
@@ -703,7 +703,7 @@
     right: 50%;
     bottom: 20%;
     margin-right: -2.5em;
-    background-color: #fe6f48;
+    background-color: #db0029;
     .rounded-corners(0.33em);
     .rotation(-5deg);
     .drop-shadow;
@@ -755,7 +755,7 @@
         margin: 0 auto;
 
         position: absolute;
-        background: #407fa2;
+        background: #f5f5f5;
         border: solid 3px #ffffff;
         padding: 1.6em 3em;
         line-height: 1.25;
@@ -797,11 +797,11 @@
         }
 
         .red-fill {
-          fill: #fe6f48;
+          fill: #db0029;
         }
 
         .red-stroke {
-          stroke: #fe6f48;
+          stroke: #db0029;
         }
 
         .white-srtoke {
@@ -973,16 +973,17 @@
     .false, .true {
       width: 50%;
       float: left;
+      color: #999999;
       font-size: 4em;
-      text-shadow: 4px 4px 0px #fe6f48;
+      text-shadow: 4px 4px 0px #666666;
       position: relative;
       transition: text-shadow 0.2s;
       transition: color 0.2s;
       z-index: 120;
 
       &.highlight {
-        text-shadow: 4px 4px 0px #ffffff;
-        color: #fe6f48;
+        text-shadow: 4px 4px 0px #000000;
+        color: #db0029;
       }
       z-index: 800;
 
@@ -1062,7 +1063,7 @@
       width: 1.5em;
       line-height: 1.5em;
       margin: -1em 0 0 0.5em;
-      background-color: #407fa2;
+      background-color: #999999;
       .rounded-corners;
       text-align: center;
     }
@@ -1194,13 +1195,16 @@
   .option {
     position: absolute;
     font-size: 1.67em;
-    text-shadow: 2px 2px 0 #407fa2;
+    color: #999999;
+    text-shadow: 2px 2px 0 #666666;
     &:hover {
-      color: #fe6f48;
+      color: #db0029;
+      text-shadow: 2px 2px 0 #000000;
     }
 
     &.active {
-      color: #fe6f48;
+      color: #db0029;
+      text-shadow: 2px 2px 0 #000000;
     }
   }
 
@@ -1271,7 +1275,7 @@
       left: 0;
       width: 50%;
       bottom: 0;
-      background-color: #fe6f48;
+      background-color: #db0029;
     }
 
   }
@@ -1279,7 +1283,7 @@
 }
 
 .result {
-  @result-border: 2px solid #407fa2;
+  @result-border: 2px solid #999999;
 
   .tagline {
     margin: 0.33em 0;
@@ -1334,7 +1338,7 @@
 
     a {
       display: inline-block;
-      background-color: #fe6f48;
+      background-color: #db0029;
       padding-left: 0.33em;
       padding-right: 0.33em;
       color: #fff;
@@ -1417,7 +1421,7 @@
 
   a {
     display: inline-block;
-    background-color: #fe6f48;
+    background-color: #db0029;
     padding-left: 0.33em;
     padding-right: 0.33em;
     color: #fff;
@@ -1523,10 +1527,16 @@
 //- fixes for style bugs
 
 .fix-MNY-123 { //-Safari(Mac,iOS)
-  color: #fe6f48 !important;
+  color: #db0029 !important;
 
   span {
     color: #fff;
   }
 
+}
+
+.welcome .caption,
+.get-ready .caption,
+.calculation .caption {
+  color: #999;
 }
