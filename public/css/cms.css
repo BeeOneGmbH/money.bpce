@@ -35,6 +35,9 @@ li.inactive {
   background: #fff;
   color: #000;
 }
+.cms .emphasis {
+  color: inherit;
+}
 .cms a {
   color: #6e6e6e;
   text-decoration: none;

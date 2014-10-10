@@ -19,7 +19,7 @@ body {
   height: 100%;
   background-color: transparent !important;
   /*IE8*/
-  font: 16px / 1.4 "Georgia", serif;
+  font: 16px / 1.4 'Arial', 'Helvetica', sans-serif;
 }
 .app:not(.preview) {
   -webkit-user-select: none;
@@ -58,7 +58,7 @@ header {
   top: 0;
   width: 100%;
   margin: 0;
-  padding: 0.5em 1.5em 0;
+  padding: 0.25em 1.5em 0;
   height: 2.5em;
   line-height: 2em;
   background: #f5f5f5;
@@ -85,22 +85,27 @@ header nav li,
 header #company {
   float: left;
 }
+header #company {
+  margin-right: 1.5em;
+}
 header nav {
   float: right;
 }
 header nav li {
-  margin-right: 1.5em;
+  margin-left: 1.5em;
 }
 header img {
-  margin-top: -0.5em;
+  margin-top: -0.25em;
   height: 2.5em;
 }
 header .branding-text:hover {
   text-decoration: underline;
 }
 .branding-text {
-  font-size: 1.5em;
+  font-family: 'Arial', sans-serif;
+  font-size: 1em;
   color: #666;
+  text-transform: none;
 }
 .caption {
   color: #999;
@@ -143,6 +148,16 @@ label {
 }
 .selectable {
   cursor: pointer;
+}
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
 .ir {
   display: block;
@@ -214,6 +229,7 @@ label {
   -o-border-radius: 99em;
   border-radius: 99em;
   color: #fff;
+  font-family: 'Georgia', serif;
   font-size: 2em;
   font-weight: bold;
   text-align: center;

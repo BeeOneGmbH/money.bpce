@@ -20,7 +20,7 @@ body {
 .app {
   height: 100%;
   background-color: transparent !important; /*IE8*/
-  font: 16px e('/') 1.4 "Georgia", serif;
+  font: 16px e('/') 1.4 'Arial', 'Helvetica', sans-serif;
 
   &:not(.preview) {
     .no-text-select();
@@ -59,7 +59,7 @@ header {
   top: 0;
   width: 100%;
   margin: 0;
-  padding: 0.5em 1.5em 0;
+  padding: 0.25em 1.5em 0;
   height: 2.5em;
   line-height: 2em;
   .gradient (#f5f5f5, #999999);
@@ -83,16 +83,20 @@ header {
     float: left;
   }
 
+  #company {
+    margin-right: 1.5em;
+  }
+
   nav {
     float: right;
   }
 
   nav li {
-    margin-right: 1.5em;
+    margin-left: 1.5em;
   }
 
   img {
-    margin-top: -0.5em;
+    margin-top: -0.25em;
     height: 2.5em;
   }
 
@@ -103,8 +107,10 @@ header {
 }
 
 .branding-text {
-  font-size: 1.5em;
+  font-family: 'Arial', sans-serif;
+  font-size: 1em;
   color: #666;
+  text-transform: none;
 }
 
 .caption {
@@ -154,6 +160,17 @@ label {
 
 .selectable {
   cursor: pointer;
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
 
 .ir {
@@ -230,6 +247,7 @@ label {
   background-color: #db0029;
   .rounded-corners;
   color: #fff;
+  font-family: 'Georgia', serif;
   font-size: 2em;
   font-weight: bold;
   text-align: center;

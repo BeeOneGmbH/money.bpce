@@ -1,8 +1,14 @@
 if menuPage
     header
         h1.note.emphasis
+            #company
+                if config.ci.url
+                    a(href=config.ci.url, target='_blank')
+                        img(src=config.ci.logoUrl)
+                else
+                    img(src=config.ci.logoUrl)
             a.branding-text(href='/', title=menuPage.getElement('navigation-home').getProperty('Text').value)
-                strong.title.caption= config.title
+                strong.title.caption.visuallyhidden= config.title
                 span.hidden #{' — '}
                 - var pageElement = menuPage.getElement('tagline')
                 include /elements/element
@@ -24,10 +30,5 @@ if menuPage
                     a.branding-text(href='/disclaimer')
                         - var pageElement = menuPage.getElement('navigation-disclaimer')
                         include /elements/element
-            #company
-                if config.ci.url
-                    a(href=config.ci.url, target='_blank')
-                        img(src=config.ci.logoUrl)
-                else
-                    img(src=config.ci.logoUrl)
+
         hr.hidden
