@@ -2294,3 +2294,9 @@ label {
 .calculation .caption {
   color: #999;
 }
+.question-8 .svg-frame .bar-chart .label {
+  fill: #999999;
+}
+.question-8 .svg-frame .bar-chart .label[x="10"] {
+  fill: #ffffff;
+}
