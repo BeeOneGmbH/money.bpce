@@ -3,7 +3,7 @@
   "version": "1.2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/BeeOneGmbH/money.git"
+    "url": "https://github.com/BeeOneGmbH/money.bpce.git"
   },
   "scripts": {
     "start": "node money"
